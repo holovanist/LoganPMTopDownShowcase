@@ -39,6 +39,16 @@ public class PlayerHealth : MonoBehaviour
                 //SceneManager.LoadScene(levelToLoad);
             }
         }
+        if (collision.gameObject.tag == "Boss")
+        {
+            health -= DamageOnContact;
+            healthbar.fillAmount = health / baseMaxHealth;
+            if (health < 1f)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //SceneManager.LoadScene(levelToLoad);
+            }
+        }
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -52,7 +62,16 @@ public class PlayerHealth : MonoBehaviour
                 //SceneManager.LoadScene(levelToLoad);
             }
         }
-        
+        if (collision.gameObject.tag == "Boss")
+        {
+            health -= DamagePerFrame;
+            healthbar.fillAmount = health / baseMaxHealth;
+            if (health < 1f)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //SceneManager.LoadScene(levelToLoad);
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

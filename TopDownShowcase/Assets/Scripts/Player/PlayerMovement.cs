@@ -6,12 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     float moveSpeed = 20f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {

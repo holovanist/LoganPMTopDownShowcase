@@ -377,7 +377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9218959982116617370}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.573, y: 15.322, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -450,7 +450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a500b9d0897b0594aacfc4e26fefed66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: Lose
   health: 20
   baseMaxHealth: 20
   DamagePerFrame: 0.05
@@ -482,9 +481,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7046116984928926309, guid: eb15c9fc480c83548b1c0df3a1f8d36c, type: 3}
-  BulletSpeed: 10
+  BulletSpeed: 9
   BulletLifetime: 2
-  ShootDelay: 0.5
+  ShootDelay: 1
 --- !u!50 &7123044012117691502
 Rigidbody2D:
   serializedVersion: 4
