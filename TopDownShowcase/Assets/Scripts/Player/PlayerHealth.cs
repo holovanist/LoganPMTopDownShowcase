@@ -17,6 +17,10 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     float DamageOnContact = 1f;
     [SerializeField]
+    float DamagePerFrame2 = 0.1f;
+    [SerializeField]
+    float DamageOnContact2 = 3f;
+    [SerializeField]
     Image healthbar;
     void Start()
     {
@@ -41,7 +45,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if (collision.gameObject.tag == "Boss")
         {
-            health -= DamageOnContact;
+            health -= DamageOnContact2;
             healthbar.fillAmount = health / baseMaxHealth;
             if (health < 1f)
             {
@@ -64,7 +68,7 @@ public class PlayerHealth : MonoBehaviour
         }
         if (collision.gameObject.tag == "Boss")
         {
-            health -= DamagePerFrame;
+            health -= DamagePerFrame2;
             healthbar.fillAmount = health / baseMaxHealth;
             if (health < 1f)
             {

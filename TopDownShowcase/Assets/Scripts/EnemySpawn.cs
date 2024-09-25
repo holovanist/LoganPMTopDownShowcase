@@ -7,15 +7,7 @@ public class EnemySpawn : MonoBehaviour
 {
     [SerializeField]
     GameObject prefab;
-    [SerializeField]
-    string levelToLoad = "Level 2";
-    float timer;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+   // float timer;
     // Update is called once per frame
     void Update()
     {
@@ -24,11 +16,6 @@ public class EnemySpawn : MonoBehaviour
         {
             GameObject Boss = Instantiate(prefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
-            //Boss.transform.position = transform.position;
-            //if (GameObject.FindWithTag("Boss") == null && timer > 1f)
-            //{
-               // SceneManager.LoadScene(levelToLoad);
-           // }
         }
     }
 }
