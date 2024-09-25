@@ -204,8 +204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063fe02d73bb17d44b063428501cb548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaseSpeed: 5
-  ChaseRange: 5
+  chaseSpeed: 7
+  ChaseRange: 10
   goHome: 1
 --- !u!114 &8207067533673110281
 MonoBehaviour:
@@ -219,8 +219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5fec98ef786e046bb45476f3b01717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  BaseMaxHp: 5
+  health: 10
+  BaseMaxHp: 10
 --- !u!95 &-4786958610685683851
 Animator:
   serializedVersion: 5
