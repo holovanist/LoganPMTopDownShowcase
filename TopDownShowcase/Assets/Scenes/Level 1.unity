@@ -106546,7 +106546,7 @@ GameObject:
   - component: {fileID: 1637011723}
   - component: {fileID: 1637011722}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Boss Spawner
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106565,7 +106565,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7602108398324064621, guid: e2988036a3d65cf4ab0b0a8b13ac82b7, type: 3}
-  levelToLoad: Level 2
 --- !u!212 &1637011723
 SpriteRenderer:
   m_ObjectHideFlags: 0
