@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField]
-    string levelToLoad = "Lose";
+    //[SerializeField]
+    //string levelToLoad = "Lose";
     [SerializeField]
     float health = 50f;
     [SerializeField]
