@@ -99,25 +99,18 @@ public class PlayerHealth : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemy Bullet")
         {
-            health -= DamageOnContact;
-            healthbar.fillAmount = health / baseMaxHealth;
-            if (health < 1f)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
+            HealthLossTriggerOC();
+        }
+        if (collision.gameObject.tag == "Boss Bullet")
+        {
+            HealthLossTriggerOC();
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            health -= DamagePerFrame;
-            healthbar.fillAmount = health / baseMaxHealth;
-            if (health < 1f)
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                //SceneManager.LoadScene(levelToLoad);
-            }
+            HealthLossTriggerPF();
         }
         if (health <= baseMaxHealth)    
         {
@@ -126,6 +119,26 @@ public class PlayerHealth : MonoBehaviour
                 health += .05f;
                 healthbar.fillAmount = health / baseMaxHealth;
             }
+        }
+    }
+    //PF = Per Frame
+    public void HealthLossTriggerPF()
+    {
+        health -= DamagePerFrame;
+        healthbar.fillAmount = health / baseMaxHealth;
+        if (health < 1f)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+    }
+    //OC = On Contact
+    public void HealthLossTriggerOC()
+    {
+        health -= DamageOnContact;
+        healthbar.fillAmount = health / baseMaxHealth;
+        if (health < 1f)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

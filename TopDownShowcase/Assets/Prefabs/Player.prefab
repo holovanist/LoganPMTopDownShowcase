@@ -455,6 +455,8 @@ MonoBehaviour:
   baseMaxHealth: 15
   DamagePerFrame: 0.05
   DamageOnContact: 1
+  DamagePerFrame2: 0.1
+  DamageOnContact2: 3
   healthbar: {fileID: 7609100224328023855}
 --- !u!114 &2951302050804961495
 MonoBehaviour:
@@ -484,7 +486,7 @@ MonoBehaviour:
   prefab: {fileID: 7046116984928926309, guid: eb15c9fc480c83548b1c0df3a1f8d36c, type: 3}
   BulletSpeed: 9
   BulletLifetime: 2
-  ShootDelay: 1
+  ShootDelay: 0.75
 --- !u!50 &7123044012117691502
 Rigidbody2D:
   serializedVersion: 4

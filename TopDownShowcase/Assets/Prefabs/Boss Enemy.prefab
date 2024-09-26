@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 8207067533673110281}
   - component: {fileID: 4172686092172261657}
   - component: {fileID: 8646000189555543245}
+  - component: {fileID: 5422819750343152935}
   m_Layer: 0
   m_Name: Boss Enemy
   m_TagString: Boss
@@ -287,6 +288,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5422819750343152935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7602108398324064621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42dcc95d61f6e84b87f5e4465b616cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7046116984928926309, guid: 4bf4241793f75f94f86fd38459a9ebff, type: 3}
+  BulletSpeed: 10
+  BulletLifetime: 2.2
+  ShootDelay: 0.5
+  shootDistance: 12.5
 --- !u!1 &7770822072923325424
 GameObject:
   m_ObjectHideFlags: 0
