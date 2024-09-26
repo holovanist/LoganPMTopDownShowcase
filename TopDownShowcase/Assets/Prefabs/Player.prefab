@@ -253,8 +253,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4294180608
+  m_fontColor: {r: 0, g: 1, b: 0.95477676, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -586,11 +586,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a500b9d0897b0594aacfc4e26fefed66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
-  baseMaxHealth: 15
+  health: 30
+  baseMaxHealth: 30
   DamagePerFrame: 0.05
   DamageOnContact: 1
-  DamagePerFrame2: 0.1
+  DamagePerFrame2: 0.05
   DamageOnContact2: 3
   healthbar: {fileID: 7609100224328023855}
 --- !u!114 &2951302050804961495
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 7046116984928926309, guid: eb15c9fc480c83548b1c0df3a1f8d36c, type: 3}
-  BulletSpeed: 9
+  BulletSpeed: 15
   BulletLifetime: 2
   ShootDelay: 0.75
 --- !u!50 &7123044012117691502

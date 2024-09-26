@@ -220,8 +220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5fec98ef786e046bb45476f3b01717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
-  BaseMaxHp: 20
+  health: 15
+  BaseMaxHp: 15
 --- !u!61 &4172686092172261657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   prefab: {fileID: 7046116984928926309, guid: 4bf4241793f75f94f86fd38459a9ebff, type: 3}
   BulletSpeed: 10
   BulletLifetime: 2.2
-  ShootDelay: 0.5
+  ShootDelay: 1.5
   shootDistance: 12.5
 --- !u!1 &7770822072923325424
 GameObject:
